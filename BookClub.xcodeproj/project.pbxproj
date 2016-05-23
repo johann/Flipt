@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78710A07A1F058AC8E0DDCFD /* Pods_BookClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E79C16F8BEE4D085BB893CA /* Pods_BookClub.framework */; };
+		8F290EF21C7E859300615C10 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290EF11C7E859300615C10 /* ImageIO.framework */; };
+		8F290EF81C7E85A900615C10 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290EF71C7E85A900615C10 /* AudioToolbox.framework */; };
+		8F290EFA1C7E85B100615C10 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290EF91C7E85B100615C10 /* CoreMotion.framework */; };
+		8F290EFC1C7E85B600615C10 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290EFB1C7E85B600615C10 /* AdSupport.framework */; };
+		8F290EFE1C7E85BD00615C10 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290EFD1C7E85BD00615C10 /* AVFoundation.framework */; };
+		8F290F001C7E85C800615C10 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290EFF1C7E85C800615C10 /* Social.framework */; };
+		8F290F021C7E85CE00615C10 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F011C7E85CE00615C10 /* Accounts.framework */; };
+		8F290F041C7E85D300615C10 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F031C7E85D300615C10 /* StoreKit.framework */; };
+		8F290F061C7E85F500615C10 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F051C7E85F500615C10 /* Security.framework */; };
+		8F290F081C7E860100615C10 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F071C7E860100615C10 /* QuartzCore.framework */; };
+		8F290F0A1C7E860700615C10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F091C7E860700615C10 /* CoreGraphics.framework */; };
+		8F290F0C1C7E863A00615C10 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F0B1C7E863A00615C10 /* CoreLocation.framework */; };
+		8F290F0E1C7E864400615C10 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F0D1C7E864400615C10 /* SystemConfiguration.framework */; };
+		8F290F101C7E865A00615C10 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F0F1C7E865A00615C10 /* MobileCoreServices.framework */; };
+		8F290F121C7E866300615C10 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F111C7E866300615C10 /* CFNetwork.framework */; };
+		8F290F141C7E866900615C10 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F131C7E866900615C10 /* AssetsLibrary.framework */; };
+		8F290F191C7EC51E00615C10 /* RSBarcodes_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F290F181C7EC51E00615C10 /* RSBarcodes_Swift.framework */; };
+		8F42B6921CF2737400C5D5BB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F42B6911CF2737400C5D5BB /* Info.plist */; };
+		8F844B181CE313010044FD5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F844B171CE313010044FD5D /* Assets.xcassets */; };
+		8FA13E6D1CF27B260076140E /* BookClub-Bridging-Header.h in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFFF781CE31035009B8BA1 /* BookClub-Bridging-Header.h */; };
+		8FA13E6E1CF27F380076140E /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF7C1CE31035009B8BA1 /* BookDetailView.swift */; };
+		8FA13E6F1CF2800F0076140E /* Popup.h in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF951CE31035009B8BA1 /* Popup.h */; };
+		8FA13E701CF2800F0076140E /* ScannerViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF971CE31035009B8BA1 /* ScannerViewController.h */; };
+		8FA13E711CF2800F0076140E /* SMXMLDocument.h in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF981CE31035009B8BA1 /* SMXMLDocument.h */; };
+		8FA13E721CF2800F0076140E /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF991CE31035009B8BA1 /* SMXMLDocument.m */; };
+		8FA13E731CF2800F0076140E /* Barcode.h in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF9A1CE31035009B8BA1 /* Barcode.h */; };
+		8FBFFFA01CE31035009B8BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF741CE31035009B8BA1 /* AppDelegate.swift */; };
+		8FBFFFA11CE31035009B8BA1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF751CE31035009B8BA1 /* MoreViewController.swift */; };
+		8FBFFFA21CE31035009B8BA1 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF761CE31035009B8BA1 /* ScannerViewController.m */; };
+		8FBFFFA31CE31035009B8BA1 /* BKTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF771CE31035009B8BA1 /* BKTabBarController.swift */; };
+		8FBFFFA41CE31035009B8BA1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF791CE31035009B8BA1 /* ProfileView.swift */; };
+		8FBFFFA51CE31035009B8BA1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF7A1CE31035009B8BA1 /* ProfileViewController.swift */; };
+		8FBFFFA61CE31035009B8BA1 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF7B1CE31035009B8BA1 /* BookDetailViewController.swift */; };
+		8FBFFFA81CE31035009B8BA1 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF7D1CE31035009B8BA1 /* ExploreViewController.swift */; };
+		8FBFFFA91CE31035009B8BA1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF7E1CE31035009B8BA1 /* LoginViewController.swift */; };
+		8FBFFFAA1CE31035009B8BA1 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF7F1CE31035009B8BA1 /* ConversationViewController.swift */; };
+		8FBFFFAC1CE31035009B8BA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF811CE31035009B8BA1 /* ViewController.swift */; };
+		8FBFFFAD1CE31035009B8BA1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF821CE31035009B8BA1 /* Constants.swift */; };
+		8FBFFFAE1CE31035009B8BA1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF831CE31035009B8BA1 /* Book.swift */; };
+		8FBFFFAF1CE31035009B8BA1 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF841CE31035009B8BA1 /* MessageViewController.swift */; };
+		8FBFFFB01CE31035009B8BA1 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF851CE31035009B8BA1 /* Friend.swift */; };
+		8FBFFFB11CE31035009B8BA1 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF861CE31035009B8BA1 /* MessageView.swift */; };
+		8FBFFFB21CE31035009B8BA1 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF871CE31035009B8BA1 /* MessageCell.swift */; };
+		8FBFFFB31CE31035009B8BA1 /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF881CE31035009B8BA1 /* MoreCell.swift */; };
+		8FBFFFB41CE31035009B8BA1 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF891CE31035009B8BA1 /* MoreView.swift */; };
+		8FBFFFB51CE31035009B8BA1 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF8A1CE31035009B8BA1 /* ExploreView.swift */; };
+		8FBFFFB71CE31035009B8BA1 /* BookCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF8C1CE31035009B8BA1 /* BookCollectionCell.swift */; };
+		8FBFFFB81CE31035009B8BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFFF8E1CE31035009B8BA1 /* LaunchScreen.storyboard */; };
+		8FBFFFB91CE31035009B8BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFFF901CE31035009B8BA1 /* Main.storyboard */; };
+		8FBFFFBA1CE31035009B8BA1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF921CE31035009B8BA1 /* Message.swift */; };
+		8FBFFFBB1CE31035009B8BA1 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF931CE31035009B8BA1 /* Background.swift */; };
+		8FBFFFBC1CE31035009B8BA1 /* Popup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF961CE31035009B8BA1 /* Popup.m */; };
+		8FBFFFBE1CE31035009B8BA1 /* Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF9B1CE31035009B8BA1 /* Barcode.m */; };
+		8FBFFFBF1CE31035009B8BA1 /* ParticipantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF9C1CE31035009B8BA1 /* ParticipantTableViewController.swift */; };
+		8FBFFFC01CE31035009B8BA1 /* PFUser+ATLParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF9D1CE31035009B8BA1 /* PFUser+ATLParticipant.swift */; };
+		8FBFFFC11CE31035009B8BA1 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFFF9E1CE31035009B8BA1 /* UserManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E79C16F8BEE4D085BB893CA /* Pods_BookClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32851B07B976E109660263CC /* Pods-BookClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookClub/Pods-BookClub.release.xcconfig"; sourceTree = "<group>"; };
+		38863F73D01C8948269B9087 /* Pods-BookClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookClub/Pods-BookClub.debug.xcconfig"; sourceTree = "<group>"; };
+		8F1760591C76520200761DF6 /* BookClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F290EF11C7E859300615C10 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		8F290EF71C7E85A900615C10 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8F290EF91C7E85B100615C10 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8F290EFB1C7E85B600615C10 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		8F290EFD1C7E85BD00615C10 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8F290EFF1C7E85C800615C10 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8F290F011C7E85CE00615C10 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8F290F031C7E85D300615C10 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8F290F051C7E85F500615C10 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8F290F071C7E860100615C10 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8F290F091C7E860700615C10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F290F0B1C7E863A00615C10 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8F290F0D1C7E864400615C10 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8F290F0F1C7E865A00615C10 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8F290F111C7E866300615C10 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8F290F131C7E866900615C10 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8F290F181C7EC51E00615C10 /* RSBarcodes_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSBarcodes_Swift.framework; path = "Pods/../build/Debug-iphoneos/RSBarcodes_Swift.framework"; sourceTree = "<group>"; };
+		8F42B6911CF2737400C5D5BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BookClub/Info.plist; sourceTree = "<group>"; };
+		8F844B171CE313010044FD5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BookClub/BookClub/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		8FBFFF731CE31035009B8BA1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BookClub/Info.plist; sourceTree = "<group>"; };
+		8FBFFF741CE31035009B8BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BookClub/AppDelegate.swift; sourceTree = "<group>"; };
+		8FBFFF751CE31035009B8BA1 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = BookClub/MoreViewController.swift; sourceTree = "<group>"; };
+		8FBFFF761CE31035009B8BA1 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScannerViewController.m; path = BookClub/ScannerViewController.m; sourceTree = "<group>"; };
+		8FBFFF771CE31035009B8BA1 /* BKTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BKTabBarController.swift; path = BookClub/BKTabBarController.swift; sourceTree = "<group>"; };
+		8FBFFF781CE31035009B8BA1 /* BookClub-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BookClub-Bridging-Header.h"; path = "BookClub/BookClub-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FBFFF791CE31035009B8BA1 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = BookClub/ProfileView.swift; sourceTree = "<group>"; };
+		8FBFFF7A1CE31035009B8BA1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = BookClub/ProfileViewController.swift; sourceTree = "<group>"; };
+		8FBFFF7B1CE31035009B8BA1 /* BookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookDetailViewController.swift; path = BookClub/BookDetailViewController.swift; sourceTree = "<group>"; };
+		8FBFFF7C1CE31035009B8BA1 /* BookDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookDetailView.swift; path = BookClub/BookDetailView.swift; sourceTree = "<group>"; };
+		8FBFFF7D1CE31035009B8BA1 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreViewController.swift; path = BookClub/ExploreViewController.swift; sourceTree = "<group>"; };
+		8FBFFF7E1CE31035009B8BA1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = BookClub/LoginViewController.swift; sourceTree = "<group>"; };
+		8FBFFF7F1CE31035009B8BA1 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationViewController.swift; path = BookClub/ConversationViewController.swift; sourceTree = "<group>"; };
+		8FBFFF801CE31035009B8BA1 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationListViewController.swift; path = BookClub/ConversationListViewController.swift; sourceTree = "<group>"; };
+		8FBFFF811CE31035009B8BA1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = BookClub/ViewController.swift; sourceTree = "<group>"; };
+		8FBFFF821CE31035009B8BA1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = BookClub/Constants.swift; sourceTree = "<group>"; };
+		8FBFFF831CE31035009B8BA1 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = BookClub/Book.swift; sourceTree = "<group>"; };
+		8FBFFF841CE31035009B8BA1 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = BookClub/MessageViewController.swift; sourceTree = "<group>"; };
+		8FBFFF851CE31035009B8BA1 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Friend.swift; path = BookClub/Friend.swift; sourceTree = "<group>"; };
+		8FBFFF861CE31035009B8BA1 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = BookClub/MessageView.swift; sourceTree = "<group>"; };
+		8FBFFF871CE31035009B8BA1 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageCell.swift; path = BookClub/MessageCell.swift; sourceTree = "<group>"; };
+		8FBFFF881CE31035009B8BA1 /* MoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreCell.swift; path = BookClub/MoreCell.swift; sourceTree = "<group>"; };
+		8FBFFF891CE31035009B8BA1 /* MoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreView.swift; path = BookClub/MoreView.swift; sourceTree = "<group>"; };
+		8FBFFF8A1CE31035009B8BA1 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreView.swift; path = BookClub/ExploreView.swift; sourceTree = "<group>"; };
+		8FBFFF8B1CE31035009B8BA1 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanViewController.swift; path = BookClub/ScanViewController.swift; sourceTree = "<group>"; };
+		8FBFFF8C1CE31035009B8BA1 /* BookCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookCollectionCell.swift; path = BookClub/BookCollectionCell.swift; sourceTree = "<group>"; };
+		8FBFFF8F1CE31035009B8BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FBFFF911CE31035009B8BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		8FBFFF921CE31035009B8BA1 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = BookClub/Message.swift; sourceTree = "<group>"; };
+		8FBFFF931CE31035009B8BA1 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Background.swift; path = BookClub/Background.swift; sourceTree = "<group>"; };
+		8FBFFF951CE31035009B8BA1 /* Popup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Popup.h; sourceTree = "<group>"; };
+		8FBFFF961CE31035009B8BA1 /* Popup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Popup.m; sourceTree = "<group>"; };
+		8FBFFF971CE31035009B8BA1 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScannerViewController.h; path = BookClub/ScannerViewController.h; sourceTree = "<group>"; };
+		8FBFFF981CE31035009B8BA1 /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMXMLDocument.h; path = BookClub/SMXMLDocument.h; sourceTree = "<group>"; };
+		8FBFFF991CE31035009B8BA1 /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMXMLDocument.m; path = BookClub/SMXMLDocument.m; sourceTree = "<group>"; };
+		8FBFFF9A1CE31035009B8BA1 /* Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Barcode.h; path = BookClub/Barcode.h; sourceTree = "<group>"; };
+		8FBFFF9B1CE31035009B8BA1 /* Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Barcode.m; path = BookClub/Barcode.m; sourceTree = "<group>"; };
+		8FBFFF9C1CE31035009B8BA1 /* ParticipantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParticipantTableViewController.swift; path = BookClub/ParticipantTableViewController.swift; sourceTree = "<group>"; };
+		8FBFFF9D1CE31035009B8BA1 /* PFUser+ATLParticipant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PFUser+ATLParticipant.swift"; path = "BookClub/PFUser+ATLParticipant.swift"; sourceTree = "<group>"; };
+		8FBFFF9E1CE31035009B8BA1 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserManager.swift; path = BookClub/UserManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F1760561C76520200761DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F290F191C7EC51E00615C10 /* RSBarcodes_Swift.framework in Frameworks */,
+				8F290F101C7E865A00615C10 /* MobileCoreServices.framework in Frameworks */,
+				8F290F141C7E866900615C10 /* AssetsLibrary.framework in Frameworks */,
+				8F290F121C7E866300615C10 /* CFNetwork.framework in Frameworks */,
+				8F290F0E1C7E864400615C10 /* SystemConfiguration.framework in Frameworks */,
+				8F290F0C1C7E863A00615C10 /* CoreLocation.framework in Frameworks */,
+				8F290F0A1C7E860700615C10 /* CoreGraphics.framework in Frameworks */,
+				8F290F081C7E860100615C10 /* QuartzCore.framework in Frameworks */,
+				8F290F061C7E85F500615C10 /* Security.framework in Frameworks */,
+				8F290F041C7E85D300615C10 /* StoreKit.framework in Frameworks */,
+				8F290F021C7E85CE00615C10 /* Accounts.framework in Frameworks */,
+				8F290F001C7E85C800615C10 /* Social.framework in Frameworks */,
+				8F290EFE1C7E85BD00615C10 /* AVFoundation.framework in Frameworks */,
+				8F290EFC1C7E85B600615C10 /* AdSupport.framework in Frameworks */,
+				8F290EFA1C7E85B100615C10 /* CoreMotion.framework in Frameworks */,
+				8F290EF81C7E85A900615C10 /* AudioToolbox.framework in Frameworks */,
+				8F290EF21C7E859300615C10 /* ImageIO.framework in Frameworks */,
+				78710A07A1F058AC8E0DDCFD /* Pods_BookClub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35E164A0BA91F9DAA9ABFA54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38863F73D01C8948269B9087 /* Pods-BookClub.debug.xcconfig */,
+				32851B07B976E109660263CC /* Pods-BookClub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F01D2CC1CA138F400E2375E /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				8F844B171CE313010044FD5D /* Assets.xcassets */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		8F1760501C76520200761DF6 = {
+			isa = PBXGroup;
+			children = (
+				8F17605B1C76520200761DF6 /* BookClub */,
+				8F17605A1C76520200761DF6 /* Products */,
+				BCB07110D1CAEC67FB19C178 /* Frameworks */,
+				35E164A0BA91F9DAA9ABFA54 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8F17605A1C76520200761DF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F1760591C76520200761DF6 /* BookClub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F17605B1C76520200761DF6 /* BookClub */ = {
+			isa = PBXGroup;
+			children = (
+				8F290F241C8394FC00615C10 /* Models */,
+				8F17607B1C76C75F00761DF6 /* Views */,
+				8F17607A1C76C75700761DF6 /* Controllers */,
+			);
+			path = BookClub;
+			sourceTree = "<group>";
+		};
+		8F17607A1C76C75700761DF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F42B6911CF2737400C5D5BB /* Info.plist */,
+				8FBFFF731CE31035009B8BA1 /* Info.plist */,
+				8FBFFF741CE31035009B8BA1 /* AppDelegate.swift */,
+				8FBFFF7E1CE31035009B8BA1 /* LoginViewController.swift */,
+				8FBFFF751CE31035009B8BA1 /* MoreViewController.swift */,
+				8FBFFF761CE31035009B8BA1 /* ScannerViewController.m */,
+				8FBFFF771CE31035009B8BA1 /* BKTabBarController.swift */,
+				8FBFFF781CE31035009B8BA1 /* BookClub-Bridging-Header.h */,
+				8FBFFF791CE31035009B8BA1 /* ProfileView.swift */,
+				8FBFFF7A1CE31035009B8BA1 /* ProfileViewController.swift */,
+				8FBFFF7B1CE31035009B8BA1 /* BookDetailViewController.swift */,
+				8FBFFF7C1CE31035009B8BA1 /* BookDetailView.swift */,
+				8FBFFF7D1CE31035009B8BA1 /* ExploreViewController.swift */,
+				8FBFFF7F1CE31035009B8BA1 /* ConversationViewController.swift */,
+				8FBFFF801CE31035009B8BA1 /* ConversationListViewController.swift */,
+				8FBFFF811CE31035009B8BA1 /* ViewController.swift */,
+				8FBFFF821CE31035009B8BA1 /* Constants.swift */,
+				8FBFFF831CE31035009B8BA1 /* Book.swift */,
+				8FBFFF841CE31035009B8BA1 /* MessageViewController.swift */,
+				8FBFFF851CE31035009B8BA1 /* Friend.swift */,
+				8FBFFF861CE31035009B8BA1 /* MessageView.swift */,
+				8FBFFF871CE31035009B8BA1 /* MessageCell.swift */,
+				8FBFFF881CE31035009B8BA1 /* MoreCell.swift */,
+				8FBFFF891CE31035009B8BA1 /* MoreView.swift */,
+				8FBFFF8A1CE31035009B8BA1 /* ExploreView.swift */,
+				8FBFFF8B1CE31035009B8BA1 /* ScanViewController.swift */,
+				8FBFFF8C1CE31035009B8BA1 /* BookCollectionCell.swift */,
+				8FBFFF8D1CE31035009B8BA1 /* Base.lproj */,
+				8FBFFF921CE31035009B8BA1 /* Message.swift */,
+				8FBFFF931CE31035009B8BA1 /* Background.swift */,
+				8FBFFF941CE31035009B8BA1 /* Popup */,
+				8FBFFF971CE31035009B8BA1 /* ScannerViewController.h */,
+				8FBFFF981CE31035009B8BA1 /* SMXMLDocument.h */,
+				8FBFFF991CE31035009B8BA1 /* SMXMLDocument.m */,
+				8FBFFF9A1CE31035009B8BA1 /* Barcode.h */,
+				8FBFFF9B1CE31035009B8BA1 /* Barcode.m */,
+				8FBFFF9C1CE31035009B8BA1 /* ParticipantTableViewController.swift */,
+				8FBFFF9D1CE31035009B8BA1 /* PFUser+ATLParticipant.swift */,
+				8FBFFF9E1CE31035009B8BA1 /* UserManager.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8F17607B1C76C75F00761DF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F01D2CC1CA138F400E2375E /* Popup */,
+				8FC5F9AD1C83BE460047394F /* Conversation Files */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8F290F241C8394FC00615C10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8FBFFF8D1CE31035009B8BA1 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				8FBFFF8E1CE31035009B8BA1 /* LaunchScreen.storyboard */,
+				8FBFFF901CE31035009B8BA1 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = BookClub/Base.lproj;
+			sourceTree = "<group>";
+		};
+		8FBFFF941CE31035009B8BA1 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				8FBFFF951CE31035009B8BA1 /* Popup.h */,
+				8FBFFF961CE31035009B8BA1 /* Popup.m */,
+			);
+			name = Popup;
+			path = BookClub/Popup;
+			sourceTree = "<group>";
+		};
+		8FC5F9AD1C83BE460047394F /* Conversation Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Conversation Files";
+			sourceTree = "<group>";
+		};
+		BCB07110D1CAEC67FB19C178 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F290F181C7EC51E00615C10 /* RSBarcodes_Swift.framework */,
+				8F290F131C7E866900615C10 /* AssetsLibrary.framework */,
+				8F290F111C7E866300615C10 /* CFNetwork.framework */,
+				8F290F0F1C7E865A00615C10 /* MobileCoreServices.framework */,
+				8F290F0D1C7E864400615C10 /* SystemConfiguration.framework */,
+				8F290F0B1C7E863A00615C10 /* CoreLocation.framework */,
+				8F290F091C7E860700615C10 /* CoreGraphics.framework */,
+				8F290F071C7E860100615C10 /* QuartzCore.framework */,
+				8F290F051C7E85F500615C10 /* Security.framework */,
+				8F290F031C7E85D300615C10 /* StoreKit.framework */,
+				8F290F011C7E85CE00615C10 /* Accounts.framework */,
+				8F290EFF1C7E85C800615C10 /* Social.framework */,
+				8F290EFD1C7E85BD00615C10 /* AVFoundation.framework */,
+				8F290EFB1C7E85B600615C10 /* AdSupport.framework */,
+				8F290EF91C7E85B100615C10 /* CoreMotion.framework */,
+				8F290EF71C7E85A900615C10 /* AudioToolbox.framework */,
+				8F290EF11C7E859300615C10 /* ImageIO.framework */,
+				1E79C16F8BEE4D085BB893CA /* Pods_BookClub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F1760581C76520200761DF6 /* BookClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F17606B1C76520300761DF6 /* Build configuration list for PBXNativeTarget "BookClub" */;
+			buildPhases = (
+				DDCEFD5A4C25820E806F3426 /* 📦 Check Pods Manifest.lock */,
+				8F1760551C76520200761DF6 /* Sources */,
+				8F1760561C76520200761DF6 /* Frameworks */,
+				8F1760571C76520200761DF6 /* Resources */,
+				8F01D2D21CA1581400E2375E /* ShellScript */,
+				FFFBF1C8EC86F94341236904 /* 📦 Embed Pods Frameworks */,
+				57CFF3D67EFD779531EBD866 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookClub;
+			productName = BookClub;
+			productReference = 8F1760591C76520200761DF6 /* BookClub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F1760511C76520200761DF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Johann;
+				TargetAttributes = {
+					8F1760581C76520200761DF6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WNAGBXF4G9;
+					};
+				};
+			};
+			buildConfigurationList = 8F1760541C76520200761DF6 /* Build configuration list for PBXProject "BookClub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F1760501C76520200761DF6;
+			productRefGroup = 8F17605A1C76520200761DF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F1760581C76520200761DF6 /* BookClub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F1760571C76520200761DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F42B6921CF2737400C5D5BB /* Info.plist in Resources */,
+				8FA13E6D1CF27B260076140E /* BookClub-Bridging-Header.h in Resources */,
+				8FBFFFB91CE31035009B8BA1 /* Main.storyboard in Resources */,
+				8FBFFFB81CE31035009B8BA1 /* LaunchScreen.storyboard in Resources */,
+				8F844B181CE313010044FD5D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57CFF3D67EFD779531EBD866 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookClub/Pods-BookClub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F01D2D21CA1581400E2375E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 2f9f339131b9905b1efd68260056a6fe6e8e88b8 9130b191a9d1b624608e27f27803ab3c7520c92ba3cbb0c1d055fab414d386cb";
+		};
+		DDCEFD5A4C25820E806F3426 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFFBF1C8EC86F94341236904 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookClub/Pods-BookClub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F1760551C76520200761DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA13E6F1CF2800F0076140E /* Popup.h in Sources */,
+				8FA13E701CF2800F0076140E /* ScannerViewController.h in Sources */,
+				8FA13E711CF2800F0076140E /* SMXMLDocument.h in Sources */,
+				8FA13E721CF2800F0076140E /* SMXMLDocument.m in Sources */,
+				8FA13E731CF2800F0076140E /* Barcode.h in Sources */,
+				8FA13E6E1CF27F380076140E /* BookDetailView.swift in Sources */,
+				8FBFFFA91CE31035009B8BA1 /* LoginViewController.swift in Sources */,
+				8FBFFFA01CE31035009B8BA1 /* AppDelegate.swift in Sources */,
+				8FBFFFAA1CE31035009B8BA1 /* ConversationViewController.swift in Sources */,
+				8FBFFFC11CE31035009B8BA1 /* UserManager.swift in Sources */,
+				8FBFFFA41CE31035009B8BA1 /* ProfileView.swift in Sources */,
+				8FBFFFAF1CE31035009B8BA1 /* MessageViewController.swift in Sources */,
+				8FBFFFA31CE31035009B8BA1 /* BKTabBarController.swift in Sources */,
+				8FBFFFA21CE31035009B8BA1 /* ScannerViewController.m in Sources */,
+				8FBFFFB71CE31035009B8BA1 /* BookCollectionCell.swift in Sources */,
+				8FBFFFBF1CE31035009B8BA1 /* ParticipantTableViewController.swift in Sources */,
+				8FBFFFB31CE31035009B8BA1 /* MoreCell.swift in Sources */,
+				8FBFFFA81CE31035009B8BA1 /* ExploreViewController.swift in Sources */,
+				8FBFFFC01CE31035009B8BA1 /* PFUser+ATLParticipant.swift in Sources */,
+				8FBFFFAE1CE31035009B8BA1 /* Book.swift in Sources */,
+				8FBFFFB41CE31035009B8BA1 /* MoreView.swift in Sources */,
+				8FBFFFB01CE31035009B8BA1 /* Friend.swift in Sources */,
+				8FBFFFB11CE31035009B8BA1 /* MessageView.swift in Sources */,
+				8FBFFFB51CE31035009B8BA1 /* ExploreView.swift in Sources */,
+				8FBFFFAD1CE31035009B8BA1 /* Constants.swift in Sources */,
+				8FBFFFA11CE31035009B8BA1 /* MoreViewController.swift in Sources */,
+				8FBFFFAC1CE31035009B8BA1 /* ViewController.swift in Sources */,
+				8FBFFFA51CE31035009B8BA1 /* ProfileViewController.swift in Sources */,
+				8FBFFFA61CE31035009B8BA1 /* BookDetailViewController.swift in Sources */,
+				8FBFFFBA1CE31035009B8BA1 /* Message.swift in Sources */,
+				8FBFFFBB1CE31035009B8BA1 /* Background.swift in Sources */,
+				8FBFFFB21CE31035009B8BA1 /* MessageCell.swift in Sources */,
+				8FBFFFBC1CE31035009B8BA1 /* Popup.m in Sources */,
+				8FBFFFBE1CE31035009B8BA1 /* Barcode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8FBFFF8E1CE31035009B8BA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FBFFF8F1CE31035009B8BA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8FBFFF901CE31035009B8BA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FBFFF911CE31035009B8BA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F1760691C76520300761DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F17606A1C76520300761DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17606C1C76520300761DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38863F73D01C8948269B9087 /* Pods-BookClub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/Crashlytics",
+					"$(PROJECT_DIR)/Pods/Crashlytics/iOS",
+					"$(PROJECT_DIR)/Pods/Fabric",
+					"$(PROJECT_DIR)/Pods/Fabric/iOS",
+					"$(PROJECT_DIR)/Pods/LayerKit",
+					"$(PROJECT_DIR)/Pods/ParseFacebookUtilsV4",
+					"$(PROJECT_DIR)/Pods/ParseTwitterUtils",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BookClub/BookClub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ParseFacebookUtilsV4",
+					"$(PROJECT_DIR)/Pods/ParseTwitterUtils",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.BookClub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookClub/BookClub/BookClub-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F17606D1C76520300761DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32851B07B976E109660263CC /* Pods-BookClub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/Crashlytics",
+					"$(PROJECT_DIR)/Pods/Crashlytics/iOS",
+					"$(PROJECT_DIR)/Pods/Fabric",
+					"$(PROJECT_DIR)/Pods/Fabric/iOS",
+					"$(PROJECT_DIR)/Pods/LayerKit",
+					"$(PROJECT_DIR)/Pods/ParseFacebookUtilsV4",
+					"$(PROJECT_DIR)/Pods/ParseTwitterUtils",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BookClub/BookClub/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ParseFacebookUtilsV4",
+					"$(PROJECT_DIR)/Pods/ParseTwitterUtils",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.BookClub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BookClub/BookClub/BookClub-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F1760541C76520200761DF6 /* Build configuration list for PBXProject "BookClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1760691C76520300761DF6 /* Debug */,
+				8F17606A1C76520300761DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F17606B1C76520300761DF6 /* Build configuration list for PBXNativeTarget "BookClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F17606C1C76520300761DF6 /* Debug */,
+				8F17606D1C76520300761DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F1760511C76520200761DF6 /* Project object */;
+}
